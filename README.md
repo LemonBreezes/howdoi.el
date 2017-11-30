@@ -1,6 +1,6 @@
 # Howdoi.el
 
-Backend for the [Howdoi](https://github.com/gleitz/howdoi) command.
+Backend for the excellent [Howdoi](https://github.com/gleitz/howdoi) command.
 
 ![Demonstration](https://raw.githubusercontent.com/galaunay/howdoi.el/master/doc/howdoi.gif)
 
