@@ -27,7 +27,6 @@
 ;;; Code:
 
 (require 'ansi-color)
-(require 'evil-core)
 
 (defconst howdoi-version "1.0"
   "The version of the Howdoi Lisp code.")
