@@ -2,6 +2,8 @@
 
 Backend for the [Howdoi](https://github.com/gleitz/howdoi) command.
 
+![Demonstration](https://raw.githubusercontent.com/galaunay/howdoi.el/master/doc/howdoi.gif)
+
 ## Install
 
 howdoi.el requires Emacs-24.4 or later
