@@ -187,16 +187,16 @@ If ANSWER-NUMBER is a number, jumpt to this answer number."
 
 (define-key howdoi-mode-map (kbd "n") 'howdoi-show-next-answer)
 (define-key howdoi-mode-map (kbd "p") 'howdoi-show-previous-answer)
-(define-key howdoi-mode-map (kbd "f") 'howdoi-toggle-full-question)
+(define-key howdoi-mode-map (kbd "f") 'howdoi-toggle-full-answer)
 (define-key howdoi-mode-map (kbd "z") 'howdoi-goto-webpage)
 (define-key howdoi-mode-map (kbd "y") 'howdoi-yank-code)
 
-(when (and (boundp 'evil-mode) evil-mode)
+(with-eval-after-load 'evil-core
   (evil-set-initial-state 'howdoi-mode 'motion)
   (evil-define-key 'motion howdoi-mode-map
     (kbd "n") 'howdoi-show-next-answer
     (kbd "p") 'howdoi-show-previous-answer
-    (kbd "f") 'howdoi-toggle-full-question
+    (kbd "f") 'howdoi-toggle-full-answer
     (kbd "y") 'howdoi-yank-code
     (kbd "z") 'howdoi-goto-webpage))
 
