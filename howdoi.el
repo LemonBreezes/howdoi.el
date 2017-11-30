@@ -38,7 +38,7 @@
 (defcustom howdoi-command "howdoi"
   "Command use to invoke howdoi."
   :type 'string
-  :group 'howdoi-mode)
+  :group 'howdoi)
 
 (defcustom howdoi-use-colors t
   "If howdoi should display syntaxic coloration."
@@ -68,12 +68,12 @@
 (defface howdoi-answer-number-face
   '((t :inherit font-lock-variable-name-face :bold t :underline t))
   "Face for the answer number indicator."
-  :group 'howdoi-mode)
+  :group 'howdoi)
 
 (defface howdoi-query-face
   '((t :inherit font-lock-comment-face))
   "Face for the query reminder."
-  :group 'howdoi-mode)
+  :group 'howdoi)
 
 
 ;;;;;;;;;;;;;;;;;;;;;;
