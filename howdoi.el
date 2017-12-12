@@ -191,7 +191,7 @@ If ANSWER-NUMBER is a number, jumpt to this answer number."
 (define-key howdoi-mode-map (kbd "z") 'howdoi-goto-webpage)
 (define-key howdoi-mode-map (kbd "y") 'howdoi-yank-code)
 
-(with-eval-after-load 'evil-core
+(with-eval-after-load "evil-core"
   (evil-set-initial-state 'howdoi-mode 'motion)
   (evil-define-key 'motion howdoi-mode-map
     (kbd "n") 'howdoi-show-next-answer
