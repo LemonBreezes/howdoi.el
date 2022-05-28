@@ -56,7 +56,7 @@
   "Last query send to howdoi.")
 
 (defvar howdoi-full-answer nil
-  "If 't', display the full answer.")
+  "If `t', display the full answer.")
 
 (defvar howdoi-buffer-name "*How do i*"
   "Name of the howdoi buffer.")
@@ -80,12 +80,12 @@
 ;;; Internal functions
 
 (defun howdoi--check-howdoi-is-present ()
-  "Check if the 'howdoi' command is available."
+  "Check if the `howdoi' command is available."
   (when (not (executable-find howdoi-command))
-    (error "'%s' command not found" howdoi-command)))
+    (error "`%s' command not found" howdoi-command)))
 
 (defun howdoi--1 (query)
-  "Backend to the 'howdoi' command.
+  "Backend to the `howdoi' command.
 
 QUERY is the howdoi query."
   (howdoi--check-howdoi-is-present)
@@ -114,7 +114,7 @@ QUERY is the howdoi query."
 ;;; User functions
 
 (defun howdoi (query &optional jump-to-it)
-  "Backend to the 'howdoi' command.
+  "Backend to the `howdoi' command.
 
 QUERY is the howdoi query.
 if JUMP-TO-IT is non-nil, select the howdoi buffer."
