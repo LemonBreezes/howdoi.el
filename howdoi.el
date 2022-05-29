@@ -193,7 +193,7 @@ If ANSWER-NUMBER is a number, jumpt to this answer number."
 
 (with-eval-after-load "evil-core"
   (evil-set-initial-state 'howdoi-mode 'motion)
-  (evil-define-key 'motion howdoi-mode-map
+  (evil-define-key* 'motion howdoi-mode-map
     (kbd "n") 'howdoi-show-next-answer
     (kbd "p") 'howdoi-show-previous-answer
     (kbd "f") 'howdoi-toggle-full-answer
